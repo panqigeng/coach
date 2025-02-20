@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Life Coach - 你的个人成长助手</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+<body>
+    <!-- 页面头部 -->
+    <header class="header">
+        <h1>AI Life Coach</h1>
+        <p>你的个人成长伙伴</p>
+    </header>
+
+    <!-- 主要对话区域 -->
+    <main class="chat-container">
+        <!-- 对话历史记录 -->
+        <div class="chat-history" id="chatHistory">
+            <!-- 对话内容将在这里动态生成 -->
+        </div>
+
+        <!-- 消息输入区域 -->
+        <div class="input-container">
+            <textarea
+                id="userInput"
+                placeholder="请输入你想和AI教练讨论的话题..."
+                rows="3"
+            ></textarea>
+            <button id="sendButton" class="send-button">发送</button>
+        </div>
+    </main>
+
+    <!-- 页面底部 -->
+    <footer class="footer">
+        <p>基于DeepSeek R1 API开发</p>
+    </footer>
+
+    <!-- 引入JavaScript文件 -->
+    <script src="/public/js/main.js"></script>
+</body>
+</html>
