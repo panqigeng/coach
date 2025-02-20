@@ -36,7 +36,7 @@ async function sendMessage(message) {
         chatHistoryDiv.appendChild(loadingDiv);
 
         // 创建EventSource连接
-        const response = await fetch('/chat', {
+        const response = await fetch('http://localhost:3000/chat', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -1,117 +1,50 @@
-# AI Life Coach 项目 (v0.1)
+# AI Life Coach 项目
 
-## 安装和运行
+## 项目简介
+这是一个基于DeepSeek R1 API开发的AI教练网站，通过智能对话为用户提供个人成长建议和指导。
 
-### 本地开发
-1. 克隆项目并安装依赖：
-```bash
-npm install
-cd server
-npm install
-```
+## 技术架构
+### 前端
+- 使用HTML5和CSS3构建响应式用户界面
+- 采用Flexbox和Grid布局实现页面结构
+- 实现实时对话界面，支持流式输出
 
-2. 配置环境变量：
-在server目录下创建.env文件，添加以下配置：
-```
-API_KEY=your_deepseek_api_key
-API_URL=your_deepseek_api_url
-```
+### 后端
+- Node.js服务器处理API请求
+- 集成DeepSeek R1 API
+- 实现CORS跨域处理
+- 处理API超时和错误情况
 
-3. 启动服务器：
-```bash
-cd server
-node server.js
-```
+## 主要功能
+1. 实时对话界面
+   - 支持用户输入消息
+   - 显示AI回复的实时流式输出
+   - 保持对话历史记录
 
-4. 在浏览器中访问：
-```
-http://localhost:3000
-```
-
-### Vercel部署
-1. Fork本项目到你的GitHub账号
-
-2. 在Vercel中导入该项目
-
-3. 配置环境变量：
-   - 在Vercel项目设置中添加以下环境变量：
-     - `API_KEY`: DeepSeek API密钥
-     - `API_URL`: DeepSeek API地址
-
-4. 部署完成后，即可通过Vercel提供的域名访问应用
-
-## 当前版本功能 (v0.1)
-
-### 核心功能
-1. AI智能对话
-   - 基于DeepSeek R1 API的智能对话系统
-   - 专业的生活教练角色定位
+2. AI教练功能
    - 个性化建议和指导
-   - 支持上下文理解和连续对话
+   - 帮助用户进行自我反思和成长
+   - 智能化的对话交互
 
-2. 实时对话界面
-   - 流式响应输出，提供即时反馈
-   - 优雅的加载动画
-   - 自动滚动和消息对齐
-   - 支持Enter快捷发送
+## 技术特点
+- 响应式设计，适配各种设备
+- 实时流式输出，提供流畅的对话体验
+- 安全的API密钥管理
+- 优化的错误处理机制
 
-3. 用户体验优化
-   - 响应式设计，适配各种设备
-   - 现代化UI界面
-   - 清晰的对话气泡区分
-   - 输入区域状态反馈
-
-### 技术特性
-1. 前端实现
-   - 原生JavaScript实现
-   - 流畅的动画效果
-   - 错误处理和状态管理
-   - 优化的滚动体验
-
-2. 后端架构
-   - Node.js + Express服务器
-   - 流式响应处理
-   - CORS跨域支持
-   - 安全的API密钥管理
-
-3. 系统稳定性
-   - 完善的错误处理机制
-   - 用户输入验证
-   - 服务器异常处理
-   - 优化的网络请求管理
-
-## 安装和运行
-
-1. 克隆项目并安装依赖：
-```bash
-npm install
-cd server
-npm install
+## 项目结构
+```
+/
+├── public/          # 静态资源文件
+│   ├── css/         # 样式文件
+│   └── js/          # JavaScript文件
+├── server/          # 后端服务器代码
+└── index.html       # 主页面
 ```
 
-2. 启动服务器：
-```bash
-cd server
-node server.js
-```
-
-3. 在浏览器中访问：
-```
-http://localhost:3000
-```
-
-## 后续规划
-- 支持更多对话场景
-- 添加用户认证系统
-- 对话历史保存功能
-- 更多个性化设置选项
-- 多语言支持
-
-## 技术栈
-- 前端：HTML5, CSS3, JavaScript
-- 后端：Node.js, Express
-- API：DeepSeek R1
-- 开发工具：VS Code
-
-## 许可证
-MIT License
+## 开发规范
+- 使用语义化HTML标签
+- CSS采用模块化设计
+- 代码添加中文注释
+- 遵循W3C标准
+- 确保跨浏览器兼容性

@@ -11,8 +11,8 @@ app.use(express.json());
 app.use(express.static('../'));
 
 // DeepSeek R1 API配置
-const API_KEY = process.env.API_KEY;
-const API_URL = process.env.API_URL;
+const API_KEY = '0a7484c1-104a-4009-a1ed-459ed368b856';
+const API_URL = 'https://ark.cn-beijing.volces.com/api/v3/chat/completions';
 
 // 处理聊天请求
 app.post('/chat', async (req, res) => {
