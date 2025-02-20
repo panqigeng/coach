@@ -1,8 +1,44 @@
 # AI Life Coach 项目 (v0.1)
 
-## 项目简介
+## 安装和运行
 
-这是一个基于DeepSeek R1 API开发的AI教练网站，通过智能对话为用户提供个人成长建议和指导。
+### 本地开发
+1. 克隆项目并安装依赖：
+```bash
+npm install
+cd server
+npm install
+```
+
+2. 配置环境变量：
+在server目录下创建.env文件，添加以下配置：
+```
+API_KEY=your_deepseek_api_key
+API_URL=your_deepseek_api_url
+```
+
+3. 启动服务器：
+```bash
+cd server
+node server.js
+```
+
+4. 在浏览器中访问：
+```
+http://localhost:3000
+```
+
+### Vercel部署
+1. Fork本项目到你的GitHub账号
+
+2. 在Vercel中导入该项目
+
+3. 配置环境变量：
+   - 在Vercel项目设置中添加以下环境变量：
+     - `API_KEY`: DeepSeek API密钥
+     - `API_URL`: DeepSeek API地址
+
+4. 部署完成后，即可通过Vercel提供的域名访问应用
 
 ## 当前版本功能 (v0.1)
 
